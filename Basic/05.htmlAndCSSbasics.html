@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>AREUH</title>
+    <style>
+        .titre{
+            font-size: 10px;
+        }
+
+        .classImage {
+            height: 100px;
+        }
+
+        body{
+            background-image: url("yeah.jpg");
+            
+        }
+
+        main{
+            background-color: whitesmoke;
+            opacity: 0.7;
+            width: 100%;
+        }
+
+        section{
+            margin: auto;
+            width: 50%;
+            text-align: center  ;
+        }
+
+        .classText{
+            background-color: yellow;
+            color: blue;
+            padding: 50px;
+        }
+
+        .zoom:hover{
+            transition: font-size 0.5s;
+            font-size: 100px;
+        }
+
+        .zoomImage:hover{
+            transition: height 1s;
+            height: 1000px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <p><b>Menu</b></p>       
+    </header>
+    
+    <main>
+        <aside id="blob">
+            <p><b>2ieme menu</b></p>
+        </aside>
+
+        <section id="blob">
+            <p><b>Section</b></p>
+
+            <!-- debut article 1 -->
+            <article>
+                <h3 class="titre">HTML5</h3>
+                <img class="classImage zoomImage" src="html5.png" alt="brand logo">
+                <p class="classText zoom">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit earum aperiam hic facere esse ducimus ullam ex. Dolore beatae assumenda libero corrupti soluta? Impedit harum, at itaque voluptatum vitae commodi?</p>
+            </article>
+            <!-- fin article 1 -->
+
+
+            <article>
+                <h3 class="titre">CSS</h3>
+                <img class="classImage" src="css3.png" alt="css">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit consequuntur aspernatur vitae architecto molestiae! Reiciendis earum ab accusantium natus, autem explicabo vero corrupti repudiandae odio, molestias repellendus quidem facilis neque!</p>
+            </article>
+            <article>
+                <h3 class="titre">JS</h3>
+                <img class="classImage" src="js.png" alt="japascript">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At error deserunt quisquam, possimus nostrum corporis optio ipsa et doloribus ex sunt libero consectetur fugiat repellat, consequatur reiciendis quibusdam! Consequuntur, ad.</p>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <h3>Footer</h3>
+    </footer>
+</body>
+</html>
