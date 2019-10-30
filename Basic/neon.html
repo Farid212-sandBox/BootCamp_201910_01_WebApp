@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+
+
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: black;
+        }
+
+        .greenNeon{
+            position: relative;
+            display: inline-block;
+            padding: 15px 30px;
+            color: #ccff00;
+            text-transform: unset;
+            letter-spacing: 4px;
+            text-decoration: none;
+            font-size: 24px;
+            overflow: hidden;
+            transition: 0.2s;
+        }
+
+        .greenNeon:hover{
+            color: #255784;
+            background: #ccff00;
+            box-shadow: 0 0 10px #ccff00, 0 0 40px #ccff00, 0 0 80px #ccff00;
+            transition-delay: 1s;
+        }
+
+        .greenNeon span{
+            position: absolute;
+            display: block;
+        }
+        /* ligne du haut */
+        .greenNeon span:nth-child(1){
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 2px;
+            background: linear-gradient(90deg, transparent, #ccff00);
+        }
+
+        .greenNeon:hover span:nth-child(1){
+            left: 100%;
+            transition: 1s;
+        }
+
+        /* ligne du bas */
+        .greenNeon span:nth-child(3){
+            bottom: 0;
+            right: -100%;
+            width: 100%;
+            height: 2px;
+            background: linear-gradient(270deg, transparent, #ccff00);
+        }
+
+        .greenNeon:hover span:nth-child(3){
+            right: 100%;
+            transition: 1s;
+            transition-delay: 0.5s;
+        }
+
+        /* ligne de droite */
+        .greenNeon span:nth-child(2){
+            top: -100%;
+            right: 0;
+            width: 2px;
+            height: 100%;
+            background: linear-gradient(180deg, transparent, #ccff00);
+        }
+
+        .greenNeon:hover span:nth-child(2){
+            top: 100%;
+            transition: 1s;
+            transition-delay: 0.25s;
+        }
+
+        /* ligne de gauche */
+        .greenNeon span:nth-child(4){
+            bottom: -100%;
+            left: 0;
+            width: 2px;
+            height: 100%;
+            background: linear-gradient(360deg, transparent, #ccff00);
+        }
+
+        .greenNeon:hover span:nth-child(4){
+            bottom: 100%;
+            transition: 1s;
+            transition-delay: 0.75s;
+        }
+
+        .blueNeon{
+            position: relative;
+            display: inline-block;
+            padding: 15px 30px;
+            color: #255784;
+            text-transform: unset;
+            letter-spacing: 4px;
+            text-decoration: none;
+            font-size: 24px;
+            overflow: hidden;
+            transition: 0.2s;
+        }
+
+        .blueNeon:hover{
+            color: #ff0033;
+            background: #00ffff;
+            box-shadow: 0 0 10px #00ffff, 0 0 40px #00ffff, 0 0 80px #00ffff;
+            transition-delay: 1s;
+        }
+
+        .blueNeon span{
+            position: absolute;
+            display: block;
+        }
+        /* ligne du haut */
+        .blueNeon span:nth-child(1){
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 2px;
+            background: linear-gradient(90deg, transparent, #00ffff);
+        }
+
+        .blueNeon:hover span:nth-child(1){
+            left: 100%;
+            transition: 1s;
+        }
+
+        /* ligne du bas */
+        .blueNeon span:nth-child(3){
+            bottom: 0;
+            right: -100%;
+            width: 100%;
+            height: 2px;
+            background: linear-gradient(270deg, transparent, #00ffff);
+        }
+
+        .blueNeon:hover span:nth-child(3){
+            right: 100%;
+            transition: 1s;
+            transition-delay: 0.5s;
+        }
+
+        /* ligne de droite */
+        .blueNeon span:nth-child(2){
+            top: -100%;
+            right: 0;
+            width: 2px;
+            height: 100%;
+            background: linear-gradient(180deg, transparent, #00ffff);
+        }
+
+        .blueNeon:hover span:nth-child(2){
+            top: 100%;
+            transition: 1s;
+            transition-delay: 0.25s;
+        }
+
+        /* ligne de gauche */
+        .blueNeon span:nth-child(4){
+            bottom: -100%;
+            left: 0;
+            width: 2px;
+            height: 100%;
+            background: linear-gradient(360deg, transparent, #00ffff);
+        }
+
+        .blueNeon:hover span:nth-child(4){
+            bottom: 100%;
+            transition: 1s;
+            transition-delay: 0.75s;
+        }
+    </style>
+</head>
+<body>
+    <a class="greenNeon" href="#">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        Neon Button
+    </a>
+</body>
+</html>
